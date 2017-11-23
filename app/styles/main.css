@@ -1,40 +1,83 @@
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
-
 body {
-  background: #fafafa;
+  /*background: #fafafa;*/
+  background: green;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
 }
 
-.hero-unit {
-  margin: 50px auto 0 auto;
-  width: 300px;
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 30px;
-  background-color: #eee;
-  border-radius: 6px;
-  padding: 60px;
+.card div{
+  margin-bottom: 10px;
 }
-
-.hero-unit h1 {
-  font-size: 60px;
-  line-height: 1;
-  letter-spacing: -1px;
-}
-
 .card{
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ grid-gap: 5px;
+ background-color: #fff;
+ color: #444;
+
   width: 300px;
   border: 1px #000;
   border-style: inset;
   padding: 2px;
 }
+ #myNumber{
+  width: 76px;
+ }
+ .preco input{
+   width: 76px;
+   /*background-color: pink;*/
+   padding: 0;
+   margin: 0;
+   /*border: none;*/
+ }
+ .peso input{
+   width: 76px;
+ }
+ .item{
+   grid-column-start: 1;
+   grid-column-end: 3;
+   grid-row-start: 1;
+   grid-row-end: 2;
+ }
+ .item input{
+   width: 206px;
+ }
+
 .preco_grama{
   border: 1px solid #555;
   margin: 10px;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 4;
+      grid-row-end: 5;
+}
+.decisao input{
+  width: 32px;
+  height: 32px;
+  /*font-size: 5em;*/
+}
+
+.add{
+  border: none;
+  /*background: none;*/
+  font-size: 2em;
+  position: relative;
+  top: 4px;
+  right: -264px;
+}
+.remove{
+  display: flex;
+  border: none;
+  /*background: none;*/
+  font-size: 1.125em;
+  /*position: relative;
+  top: 0px;
+  right: -280px;*/
+  /*z-index: 2;*/
+  width: 30px;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+justify-self: end;
 }

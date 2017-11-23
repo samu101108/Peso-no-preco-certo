@@ -21,6 +21,9 @@
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
+    <script src="https://use.fontawesome.com/e06486594d.js"></script>
+
+
   </head>
   <body>
     <!--[if IE]>
@@ -28,10 +31,23 @@
     <![endif]-->
 
     <div class="card">
+      <button class="remove" type="button" name="add"><i class="fa fa-ellipsis-v"></i></button>
+      <div class="item">
+        <input type="text" id="item" value="" placeholder="O que está comprando?">
+        <!-- <i class="fa fa-camera"></i> -->
+        <!-- Ideia de reconhecimento de tag de preço, com nome, peso, codigo de barras, etc -->
+
+        <!-- Idéia de seleção a partir de uma lista de itens já no BD ou lista -->
+            <!-- <input type="text" list="cars" placeholder="Achocolatado"/>
+              <datalist id="cars">
+              <option>Volvo</option>
+              <option>Saab</option>
+              <option>Mercedes</option>
+              <option>Audi</option>
+              </datalist> -->
+      </div>
       <div class="qtd">
         Quantidade
-        <!-- <span>1</span> -->
-        <!-- <input type="text" name="" value=""> -->
         <input type="number" id="myNumber" value="1">
       </div>
       <div class="emb">
@@ -46,21 +62,31 @@
       <div class="preco">
         Preço
         <span>R$</span>
-        <input type="text" name="" value="">
+        <input type="text" name="preco" value="">
       </div>
-      <div class="peso'">
+      <div class="peso">
         Peso
         <!-- <span>200</span> -->
-        <input type="text" name="" value="">
+        <input type="text" name="peso" value="">
+      </div>
+      <div class="unidade">
+        Unidade de medida
+        <select class="" name="unidade">
+          <option value="Pacote">gramas</option>
+          <option value="Lata">quilo</option>
+          <option value="Caixa">ml</option>
+          <option value="Garrafa">litro</option>
+        </select>
       </div>
       <div class="preco_grama">
         Preço da grama
         <span>R$0,01395</span>
       </div>
       <div class="decisao">
-        Vai levar?<input type="checkbox" name="" value="">
+        Vai levar?<input type="checkbox" name="decide" value="">
       </div>
     </div>
+    <button class="add" type="button" name="add"><i class="fa fa-plus-circle"></i></button>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
