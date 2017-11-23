@@ -40,7 +40,8 @@ body {
    grid-row-end: 2;
  }
  .item input{
-   width: 206px;
+   width: 288px;
+   margin-bottom: 5px;
  }
 
 .preco_grama{
@@ -66,7 +67,7 @@ body {
   right: -264px;
 }
 .remove{
-  display: flex;
+  /*display: flex;*/
   border: none;
   /*background: none;*/
   font-size: 1.125em;
@@ -75,9 +76,52 @@ body {
   right: -280px;*/
   /*z-index: 2;*/
   width: 30px;
-        grid-column-start: 3;
+        grid-column-start: 1;
         grid-column-end: 4;
+        /*grid-column-start: 3;
+        grid-column-end: 4;*/
         grid-row-start: 1;
         grid-row-end: 2;
 justify-self: end;
 }
+
+/*BUTTON dropdown*/
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    /*padding: 16px;*/
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: -135px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}

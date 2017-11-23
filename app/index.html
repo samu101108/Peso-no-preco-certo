@@ -30,22 +30,50 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="card">
-      <button class="remove" type="button" name="add"><i class="fa fa-ellipsis-v"></i></button>
-      <div class="item">
-        <input type="text" id="item" value="" placeholder="O que está comprando?">
-        <!-- <i class="fa fa-camera"></i> -->
-        <!-- Ideia de reconhecimento de tag de preço, com nome, peso, codigo de barras, etc -->
+    <div class="item">
+      <input type="text" id="item" value="" placeholder="O que está comprando?">
+      <!-- <i class="fa fa-camera"></i> -->
+      <!-- Ideia de reconhecimento de tag de preço, com nome, peso, codigo de barras, etc -->
 
-        <!-- Idéia de seleção a partir de uma lista de itens já no BD ou lista -->
-            <!-- <input type="text" list="cars" placeholder="Achocolatado"/>
-              <datalist id="cars">
-              <option>Volvo</option>
-              <option>Saab</option>
-              <option>Mercedes</option>
-              <option>Audi</option>
-              </datalist> -->
+      <!-- Idéia de seleção a partir de uma lista de itens já no BD ou lista -->
+      <!-- <input type="text" list="cars" placeholder="Achocolatado"/>
+      <datalist id="cars">
+      <option>Volvo</option>
+      <option>Saab</option>
+      <option>Mercedes</option>
+      <option>Audi</option>
+    </datalist> -->
+  </div>
+    <div class="card">
+      <!-- <div class="dropdown">
+        <button  type="button" name="remove"
+        id="myDropdown"
+        class="dropbtn remove"
+        onclick="myFunction()">
+          <i class="fa fa-ellipsis-v"></i>
+        </button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </div>
+      </div> -->
+
+
+      <div class="dropdown remove">
+      <button
+        type="button" name="remove"
+        onclick="myFunction()"
+        class="dropbtn remove">
+          <i class="fa fa-ellipsis-v"></i>
+      </button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#home">Remover item</a>
+          <a href="#about">Duplicar item</a>
+        </div>
       </div>
+
+
       <div class="qtd">
         Quantidade
         <input type="number" id="myNumber" value="1">
