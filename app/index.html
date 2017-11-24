@@ -68,8 +68,10 @@
           <i class="fa fa-ellipsis-v"></i>
       </button>
         <div id="myDropdown" class="dropdown-content">
-          <a href="#home">Remover item</a>
-          <a href="#about">Duplicar item</a>
+          <a href="#home"
+          onclick="remove_card()">
+            Remover item</a>
+          <!-- <a href="#about">Duplicar item</a> -->
         </div>
       </div>
 
@@ -90,12 +92,12 @@
       <div class="preco">
         Preço
         <span>R$</span>
-        <input type="number" step="any" name="preco">
+        <input id="preco" type="number" step="any" name="preco">
       </div>
       <div class="peso">
         Peso
         <!-- <span>200</span> -->
-        <input type="number" name="peso">
+        <input id="peso" type="number" name="peso">
       </div>
       <div class="unidade">
         Unidade de medida
@@ -107,12 +109,15 @@
         </select>
       </div>
       <div class="preco_grama">
-        Preço da grama
-        <span>R$0,01395</span>
+        Preço da grama:
+        <span id="preco_grama" ></span>
+        <!-- R$0,01395 -->
       </div>
       <div class="decisao">
         Vai levar?<input type="checkbox" name="decide" value="">
       </div>
+      <button type="button" name="button"
+      onclick="calc_item()">calcular</button>
     </div>
 
     <div id="clone"></div>

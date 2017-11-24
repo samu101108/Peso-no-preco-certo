@@ -32,3 +32,24 @@ function add_card(){
     clone.appendChild(cardClone);//cloning (paste)
 }
 // FIM DE FUNÇÃO PARA O ADD button
+
+// FUNÇÃO PARA O remove button
+function remove_card(){
+
+}
+// FIM DE FUNÇÃO PARA O remove button
+
+// FUNÇÃO PARA calcular o preço x quantidade
+function calc_item(){
+  var val_preco = document.getElementById("preco").value;
+  var val_peso = document.getElementById("peso").value;
+
+  var relacao_preco = val_preco / val_peso;
+  document.getElementById("preco_grama").innerHTML = (relacao_preco);
+  console.log(val_preco);
+  console.log(val_peso);
+  console.log(relacao_preco);
+
+
+}
+// FIM DE FUNÇÃO PARA calcular o preço x quantidade
