@@ -5,8 +5,8 @@ body {
   color: #333;
 }
 
-.card div{
-  margin-bottom: 10px;
+.card{
+  margin: 8px 0;
 }
 .card{
  display: grid;
