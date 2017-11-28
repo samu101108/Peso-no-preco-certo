@@ -2,14 +2,14 @@
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
+    document.getElementById('myDropdown').classList.toggle('show');
 }
 
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
 
-    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var dropdowns = document.getElementsByClassName('dropdown-content');
     var i;
     for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];
@@ -27,7 +27,7 @@ window.onclick = function(event) {
 
 // FUNÇÃO PARA O ADD button
 function add_card(){
-    var theCard = document.getElementById("card");  //takes the HTML id leftSide to the theLeftSide var
+    var theCard = document.getElementById('card');  //takes the HTML id leftSide to the theLeftSide var
     var cardClone = theCard.cloneNode(true);//cloning (float)
     clone.appendChild(cardClone);//cloning (paste)
 }
@@ -41,11 +41,11 @@ function remove_card(){
 
 // FUNÇÃO PARA calcular o preço x quantidade
 function calc_item(){
-  var val_preco = document.getElementById("preco").value;
-  var val_peso = document.getElementById("peso").value;
+  var val_preco = document.getElementById('preco').value;
+  var val_peso = document.getElementById('peso').value;
 
   var relacao_preco = val_preco / val_peso;
-  document.getElementById("preco_grama").innerHTML = (relacao_preco);
+  document.getElementById('preco_grama').innerHTML = (relacao_preco);
   console.log(val_preco);
   console.log(val_peso);
   console.log(relacao_preco);
